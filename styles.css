@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.app {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 240px;
+  min-height: 440px;
+  padding: 20px 40px;
+  border-radius: 20px;
+
+  color: #fff;
+  background: rgb(200, 200, 200);
+}
+
+.page {
+  width: 100%;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.attention {
+  font-size: 30px;
+}
+
+.app-logo {
+  width: 128px;
+}
+
+form {
+  display: flex;
+  min-width: 210px;
+  padding: 2px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+form.focused {
+  position: relative;
+  background: rgb(200, 200, 200);
+  background-clip: padding-box;
+  border: solid 3px transparent;
+  border-radius: 5px;
+}
+
+form.focused::before {
+  position: absolute;
+  content: '';
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  z-index: -1;
+  margin: -3px;
+  border-radius: inherit;
+  background: linear-gradient(to left, #c74af9, #4057ff);
+}
+
+input[type="search"] {
+  width: 100%;
+  margin: 0;
+  padding: 7px 8px;
+  color: inherit;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+input[type="search"]::placeholder {
+  color: #ebebeb;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+
+  cursor: pointer;
+  height: 20px;
+  width: 30px;
+  background: url('./images/clear-symbol-hover.png') no-repeat center;
+  opacity: 0.6;
+}
+
+input[type="search"]::-webkit-search-cancel-button:hover {
+  opacity: 1;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+  width: 40px;
+  opacity: 0.6;
+  border: none;
+  background: url("./images/magnifying-glass-icon.svg") no-repeat center;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+.show-location {
+  display: flex;
+  justify-content: center;
+  width: 262px;
+  margin: 0;
+  font-size: 22px;
+  padding: 7px 8px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-location.focused {
+  position: relative;
+  background: rgb(200, 200, 200);
+  background-clip: padding-box;
+  border: solid 3px transparent;
+  border-radius: 5px;
+}
+
+.show-location.focused::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  z-index: -1;
+  margin: -3px;
+  border-radius: inherit;
+  background: linear-gradient(to right, #c74af9, #4057ff);
+}
+
+.show-location img {
+  width: 30px;
+  height: 30px;
+}
+
+.show-location span {
+  padding: 0 3px;
+}

@@ -6,7 +6,6 @@ The features used are listed below:
 * Weather API ([OpenWeather API](https://openweathermap.org/ "OpenWeather API"))
 * Reverse Geocoding API ([Geoapify](https://www.geoapify.com/ "Geoapify"))
 * Geolocation API
-* Fetch API
 * Network requests (fetch, FormData)
 * Storing data in the browser (localStorage)
 

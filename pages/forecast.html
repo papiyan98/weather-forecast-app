@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="app">
+      <div class="forecast">
+        <div class="app-header">
+          <img class="app-logo" src="../images/weather-app-icon.png">
+          <form method="post" name="citySearch">
+            <input type="search" name="city" placeholder="Search city..." autocomplete="off">
+            <button type="submit"></button>
+          </form>
+          <img src="../images/location-icon.png" id="location-btn">
+        </div>
+        <div class="info"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
